@@ -4,7 +4,9 @@
   "main": "index.js",
   "scripts": {
     "dev:client": "webpack --watch",
-    "dev:server": "node --watch --conditions react-server server/main.js"
+    "dev:server": "node --watch --conditions react-server server/main.js",
+    "build": "NODE_ENV=production webpack",
+    "start": "NODE_ENV=production node --conditions react-server server/main.js"
   },
   "keywords": [],
   "author": "",
